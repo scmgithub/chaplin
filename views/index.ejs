@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy gifs</title>
+</head>
+<body>
+<h1>Images for <%= packet.search.replace(/\+/g," ")%></h1>
+<div style='width:1505px; height:auto; overflow:auto;'>
+
+<%for(var i=0; i<packet.gifs.length;i++) { %>
+<img src="<%=packet.gifs[i]%>">
+<%}%>
+
+</div>
+<br>
+<a href="/"> Back to Search</a>
+<br><br>
+</body>
+</html>
